@@ -1,19 +1,21 @@
+// ENGINEER JEST TEST
+// ---------------------------------------------------------------------------
 const Engineer = require("../lib/Engineer");
 
-test("Set GitHUb account via constructor", () => {
-  const testValue = "GitHubUser";
-  const e = new Engineer("Bug", 1, "email@email.com", testValue);
-  expect(e.github).toBe(testValue);
+test("Set GitHub Account via constructor", () => {
+    const testValue = "GitHubUser";
+    const emp = new Engineer("Cole", 1, "email@fakemail.com", testValue);
+    expect(emp.github).toBe(testValue);
 });
 
-test("getRole() should return \"Engineer\"", () => {
-  const testValue = "Engineer";
-  const e = new Engineer("Bug", 1, "email@email.com", "GitHubUser");
-  expect(e.getRole()).toBe(testValue);
+test("getRole() function should return 'Enginner'", () => {
+    const testValue = "Engineer";
+    const emp = new Engineer("Cole", 1, "email@fakemail.com", "GitHubUser");
+    expect(emp.getRole()).toBe(testValue);
 });
 
-test("Get GitHub username via getGithub()", () => {
-  const testValue = "GitHubUser";
-  const e = new Engineer("Bug", 1, "email@email.com", testValue);
-  expect(e.getGithub()).toBe(testValue);
+test("getGitHub() function should return Github Username", () => {
+    const testValue = "GitHubUser";
+    const emp = new Engineer("Cole", 1, "email@fakemail.com", testValue);
+    expect(emp.getGitHub()).toBe(testValue);
 });

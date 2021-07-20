@@ -1,20 +1,22 @@
+// MANAGER JEST TEST
+// ---------------------------------------------------------------------------
 const Manager = require("../lib/Manager");
-const Employee = require("../lib/Employee");
 
-test("Office number set via constructor argument", () => {
-  const testValue = 100;
-  const e = new Manager("Bug", 1, "email@email.com", testValue);
-  expect(e.officeNumber).toBe(testValue);
+
+test("Set Office Number via constructor argument", () => {
+    const testValue = 83;
+    const emp = new Manager("Cole", 1, "email@fakemail.com", testValue);
+    expect(emp.officeNumber).toBe(testValue);
 });
 
-test("getRole() should return \"Manager\"", () => {
-  const testValue = "Manager";
-  const e = new Manager("Bug", 1, "email@email.com", 100);
-  expect(e.getRole()).toBe(testValue);
+test("getRole() function should return 'Manager'", () => {
+    const testValue = "Manager";
+    const emp = new Manager("Cole", 1, "email@fakemail.com");
+    expect(emp.getRole()).toBe(testValue);
 });
 
-test("Office number set via getOffice()", () => {
-  const testValue = 100;
-  const e = new Manager("Bug", 1, "email@email.com", testValue);
-  expect(e.getOfficeNumber()).toBe(testValue);
+test("Get Office Number via getOffice()", () => {
+    const testValue = 83;
+    const emp = new Manager("Cole", 1, "email@fakemail.com", testValue);
+    expect(emp.getOfficeNumber()).toBe(testValue);
 });
