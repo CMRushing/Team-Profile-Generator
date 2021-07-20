@@ -1,26 +1,26 @@
+// EMPLOYEE CLASS
+// ---------------------------------------------------------------------------
+
+// Creates Employee Class
 class Employee {
     constructor(name, id, email){
         this.name = name;
         this.id = id;
-        this.title = "Employee";
         this.email = email;
-    };
-    getName(){
+        this.role = "Employee"
+    }
+    getName() {
         return this.name;
-    };
+    }
     getId() {
         return this.id;
-
-    };
+    }
     getEmail() {
         return this.email;
-
-    };
-    getRole(){
-        return this.title;
-
-    };
+    }
+    getRole() {
+        return this.role;
+    }
 }
 
-
-module.exports = Employee;
+module.exports = Employee

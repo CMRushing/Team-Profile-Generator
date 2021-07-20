@@ -1,19 +1,22 @@
-const Employee = require("./employee")
+// ENGINEER CLASS
+// ---------------------------------------------------------------------------
 
+// Required to Extend From Employee Class
+const Employee = require("./employee");
+
+// Creates Engineer Class
 class Engineer extends Employee {
-    constructor(name, id, email, github){
-        super (name, id, email)
-        this.github = github;
-        this.title = "Engineer"
+    constructor(engineerName, engineerId, engineerEmail, gitHub){
+        super(engineerName, engineerId, engineerEmail);
+        this.github = gitHub;
+        this.role = "Engineer";
     }
-
-    getGithub(){
+    getGitHub(){
         return this.github;
     }
-
-    getRole(){
-        return this.title;
+    getRole() {
+        return this.role;
     }
 }
 
-module.exports = Engineer
+module.exports = Engineer;
