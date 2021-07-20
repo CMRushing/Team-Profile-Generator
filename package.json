@@ -4,26 +4,27 @@
     "description": "OOP and Function Testing for Team Profile Generator",
     "main": "app.js",
     "directories": {
-      "lib": "lib",
-      "test": "test"
+        "lib": "lib",
+        "test": "test"
     },
     "scripts": {
-      "test": "jest --verbose test/*"
+        "test": "jest --verbose test/*",
+        "start": "index.js"
     },
     "repository": {
-      "type": "git",
-      "url": "git+https://github.com/CMRushing/Team-Profile-Generator" 
+        "type": "git",
+        "url": "git+https://github.com/CMRushing/Team-Profile-Generator"
     },
     "author": "",
     "license": "ISC",
     "bugs": {
-      "url": "https://github.com/CMRushing/Team-Profile-Generator/issues"
+        "url": "https://github.com/CMRushing/Team-Profile-Generator/issues"
     },
     "homepage": "https://github.com/CMRushing/Team-Profile-Generator#readme",
     "dependencies": {
-      "inquirer": "^6.5.2"
+        "inquirer": "^6.5.2"
     },
     "devDependencies": {
-      "jest": "^24.9.0"
+        "jest": "^24.9.0"
     }
-  }
+}
